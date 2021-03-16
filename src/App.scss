@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+
+  .rating {
+    font-size: 30px;
+    margin: 20px;   
+  
+    &:hover:before, &:hover ~ :before {
+      content: '\2605';
+      color: gold;
+      position: absolute;
+    }
+  }
+}
