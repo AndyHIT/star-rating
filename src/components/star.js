@@ -1,10 +1,8 @@
-const selectStarValue = () => {
-  
-}
-
 const Star = (props) => {
+  const { starValue, selectStarValue } = props;
+
   return (
-    <span className='rating' onClick={selectStarValue}>&#x2606;</span>
+    <span className={`rating ${starValue ? 'fill' : ''}`} onClick={selectStarValue}>&#x2606;</span>
   )
 }
 

@@ -14,5 +14,11 @@
       color: gold;
       position: absolute;
     }
+
+    &.fill:before {
+      content: '\2605';
+      color: gold;
+      position: absolute;
+    }
   }
 }
